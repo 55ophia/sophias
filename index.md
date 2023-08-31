@@ -128,7 +128,8 @@ git init shows does somthin,, git shows something. github shares with interneT
 
 <style>
 h2{background-color: powderblue;
-font-size: 40px;}
+font-size: 40px;
+text-align: center;}
 .abtme{font-size: 25px}
 hr{border: 6px dotted cornflowerblue;}
 hr{background-color: white}
