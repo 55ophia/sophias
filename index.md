@@ -140,5 +140,4 @@ article{font-size: 25px}
 table, th, td {border: 5px solid cadetblue;}
 th{background-color: lightblue;
 text-align: center;}
-.all{text-align: center;}
 </style>
