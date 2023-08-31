@@ -2,7 +2,7 @@
 layout: default
 title: Student Blog
 ---
-<div class="all">
+
 <br>
 <h2 style ="color:cornflowerblue;"> SOPHIA'S BLOG <i>!</i></h2>
 <h3> about me: </h3>
@@ -126,7 +126,6 @@ git init shows does somthin,, git shows something. github shares with interneT
 
 
 
-</div>
 <style>
 h2{background-color: powderblue;
 font-size: 40px;}

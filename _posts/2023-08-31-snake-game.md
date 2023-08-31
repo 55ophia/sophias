@@ -8,8 +8,6 @@ type: hacks
 courses: { compsci: {week: 2} }
 ---
 
-{% include nav_frontend.html %}
-
 <style>
 
     body{
