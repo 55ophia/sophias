@@ -2,10 +2,10 @@
 layout: default
 title: Student Blog
 ---
-
+<div class="all">
 <br>
 <h2 style ="color:cornflowerblue;"> SOPHIA'S BLOG <i>!</i></h2>
-### about me:
+<h3> about me: </h3>
 <div class="abtme">
 i'm soph!! she/her ,  a minor, and chinese-american
 <br>
@@ -30,17 +30,29 @@ check out my github page: <a href  ="https://github.com/55ophia"> here </a> !!!!
 <h3 slot='h-1'> task list / hacks 4 this blog: </h3>
 
 - [x] add link to blog
+<br>
 - [x] add image to blog (WHY ISNT IT WORKING nvm ty to my dad)
+<br>
 - [x] learn whts goin on with markdown (ish)
+<br>
 - [x] help aanya with her blog! (my partner)
+<br>
 - [x] do a blog theme
+<br>
 - [ ] for some reason changing this to html deletes the whole list so i cant make the font bigger...
+<br>
 - [ ] pass the interview. aanya is HOPEFULLY finished
+<br>
 - [ ] check over the blog w/ friends
+<br>
 - [x] fix the img like why is so... not aligned
+<br>
 - [x] go overboard on the html
+<br>
 - [ ] anything not created by me should go into gitignore, not commit
+<br>
 - [ ] make a reminder section
+<br>
 - [ ] make table of contents bro its not workin cyz it makes everytin html SOBSSS
 <hr style="border: 6px dotted cornflowerblue">
 
@@ -111,6 +123,10 @@ mkdir = make directory
 git init shows does somthin,, git shows something. github shares with interneT
 <br>
 
+
+
+
+</div>
 <style>
 h2{background-color: powderblue;
 font-size: 40px;}
@@ -123,7 +139,7 @@ h3{font-size: 30px;}
 padding: 40px;}
 article{font-size: 25px}
 table, th, td {border: 5px solid cadetblue;}
-table{border-radius: 50px;}
 th{background-color: lightblue;
 text-align: center;}
+.all{text-align: center;}
 </style>
