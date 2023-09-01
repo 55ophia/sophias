@@ -1,8 +1,8 @@
 ---
 toc: true
 comments: false
-layout: post
-title: Daily Plan 
+layout: plans
+title: plans for every week!
 description: schedule, notes, hacks !
 type: plans
 courses: { compsci: {week: 0} }

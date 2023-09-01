@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: false
+comments: true
 layout: post
 title: snack game
 description: play as snek eat thing
@@ -19,7 +19,7 @@ courses: { compsci: {week: 2} }
 
     canvas{
         display: none;
-        border-style: solid;
+        border-style: dotted;
         border-width: 10px;
         border-color: #FFFFFF;
     }
@@ -29,7 +29,7 @@ courses: { compsci: {week: 2} }
 
     /* All screens style */
     #gameover p, #setting p, #menu p{
-        font-size: 20px;
+        font-size: 30px;
     }
 
     #gameover a, #setting a, #menu a{
@@ -272,7 +272,7 @@ courses: { compsci: {week: 2} }
             }
             // Repaint canvas
             ctx.beginPath();
-            ctx.fillStyle = "royalblue";
+            ctx.fillStyle = "powderblue";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             // Paint snake
             for(let i = 0; i < snake.length; i++){
@@ -332,7 +332,7 @@ courses: { compsci: {week: 2} }
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
-            ctx.fillStyle = "#FFFFFF";
+            ctx.fillStyle = "royalblue";
             ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
         }
         /* Random food placement */
@@ -368,7 +368,7 @@ courses: { compsci: {week: 2} }
         let setWall = function(wall_value){
             wall = wall_value;
             if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor = "#FFFFFF";}
+            if(wall === 1){screen_snake.style.borderColor = "cornflowerblue";}
         }
     })();
 </script>
