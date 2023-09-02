@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: false
+comments: true
 layout: post
 title: makin theem cute
 description: isnt it cuet. o finally didit.
