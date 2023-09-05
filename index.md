@@ -130,11 +130,12 @@ git init shows does somthin,, git shows something. github shares with interneT
 h2{background-color: powderblue;
 font-size: 40px;
 text-align: center;
-font-family: "Times New Roman";}
+font-family: "Shrikhand";}
 .abtme{font-size: 25px}
 hr{border: 6px dotted cornflowerblue;}
 hr{background-color: white}
-h3{font-size: 30px;}
+h3{font-size: 30px;
+font-family:"Poppins";}
 .cat{text-align: center}
 .img{float: left;
 padding: 40px;}
