@@ -14,7 +14,7 @@ we worked on like lots of stuff/
 
 ### Pair Planning Meeting
 me meeting with annays we facetimed. ```code```
-
+its pretty hard cuz aanya got a new macbook so we gotta redo stuff sobs
 
 <style>
 h3{
