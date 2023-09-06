@@ -28,6 +28,8 @@ COMMANDS: yes we did make. yes we commited.
 
 GIT ACC: yah we can obv push. pull is like taking stuff from another repo and get local to do
 
+THEME: bro it was hell. anyway finished it party party
+
 
 
 
