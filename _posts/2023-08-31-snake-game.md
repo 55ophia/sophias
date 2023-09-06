@@ -331,9 +331,9 @@ courses: { compsci: {week: 2} }
         }
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
-                 let appleDot = function(x, y){
-             ctx.font = "15px Arial"; // Adjust the font size here (e.g., 10px, 12px)
-             ctx.fillText("🍎", x * BLOCK, y * BLOCK);
+        let appleDot = function(x, y){
+   ctx.font = "15px Arial"; // Adjust the font size here (e.g., 10px, 12px)
+   ctx.fillText("🍎", x * BLOCK, y * BLOCK);
         }
         let snakeDot = function(x, y){
     ctx.font = "20px Arial"; // Adjust the font size here (e.g., 10px, 12px)

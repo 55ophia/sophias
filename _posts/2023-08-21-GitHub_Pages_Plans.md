@@ -1,7 +1,7 @@
 ---
 toc: true
 comments: false
-layout: plan
+layout: post
 title: dtailer plan
 description: learnin about hcks n stuff
 type: plans

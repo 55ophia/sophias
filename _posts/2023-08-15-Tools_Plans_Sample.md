@@ -1,7 +1,7 @@
 ---
 toc: true
 comments: false
-layout: plans
+layout: post
 title: plans for every week!
 description: schedule, notes, hacks !
 type: plans

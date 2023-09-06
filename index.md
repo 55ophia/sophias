@@ -125,6 +125,15 @@ git init shows does somthin,, git shows something. github shares with interneT
 
 <br>
 
+```
+is this a cold cenll
+print("hello world")
+th{background-color: lightblue;
+text-align: center;}
+
+WHY IS IT NIT WORKING
+```
+
 
 <style>
 h2{background-color: powderblue;
