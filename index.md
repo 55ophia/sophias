@@ -97,9 +97,9 @@ check out my github page: <a href  ="https://github.com/55ophia"> here </a> !!!!
     <td> today i did my live review and TURNSO UT I OT 90% CUZ I DIDNT PUSh. so iltereally went home and asked my comp sci dad and even he didn know. so i searched it up turns out i needed to make it public thru settings like wthhhh anyways </td>
     <td> so literally im tryna find out what the lab notebook check whtever but i have no clue what sgoin on like what is a ipynb whtever the frick thing an he isn't even clarifyin like what am i supposed to do?? like how do i code idek like where do i test the coding anyway</td>
 
-
 </table>
 
+part | rocky | oouse
 
 
 
