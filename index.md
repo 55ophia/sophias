@@ -99,6 +99,14 @@ check out my github page: <a href  ="https://github.com/55ophia"> here </a> !!!!
 
 </table>
 
+### savajcript
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+click 4 date time LOSER</button>
+
+<p id="demo"></p>
+
 part | rocky | oouse
 
 
