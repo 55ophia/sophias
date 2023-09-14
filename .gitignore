@@ -5,3 +5,10 @@ nohup.out
 Gemfile.lock
 
 _posts/2023-09-06-javascript-output-jquery.ipynb
+
+_js
+three.r119.min.js
+vanta.halo.min.js
+vanta.rings.min.js
+vanta.net.min.js
+vanta.birds.min.js

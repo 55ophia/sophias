@@ -33,7 +33,8 @@ HTML implementation of the calculator.
         background: rgba(255, 255, 255, 0.75);
         border: 1px dotted cornflowerblue;
         border-radius: 16px;
-        width: 50%;
+        max-width: 500px;
+        width: 100%;
     }
   .calculator-output {
     /* calulator output 
@@ -55,7 +56,7 @@ HTML implementation of the calculator.
 
 
 
- .calculator-number{
+.calculator-number {
     backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
     -webkit-backdrop-filter: blur(5.5px);
@@ -63,11 +64,13 @@ HTML implementation of the calculator.
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #232323;
-    flex-basis: 20%;
+    flex-basis: 18%;
     font-family: inherit;
     height: 65px;
     font-size: 20px;
- }
+    margin: 5px;
+}
+
  .calculator-operation{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
@@ -92,7 +95,11 @@ HTML implementation of the calculator.
     font-size: 20px;
  }
 
-.calculator
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
  .calculator-operation:hover{
      background-color: inherit;
@@ -142,17 +149,16 @@ HTML implementation of the calculator.
 <!-- Add a container for the animation -->
 <body>
 <div id="animation">
+<div class="container">
     <section class="calc-butt">
         <div class="wrapper">
         <!--result-->
             <div class="calculator-output" id="output">0</div>
                 <div class="butt-row">
                     <button class="calculator-clear">C</button>
-                    <button class="calculator-operation calculator-back">
-                        &larr;
-                    </button>
+                    <button class="calculator-operation calculator-back">←</button>
                     <button class="calculator-operation">+</button>
-                <div>
+                </div>
                 <div class="butt-row">
                     <button class="calculator-number">7</button>
                     <button class="calculator-number">8</button>
@@ -164,13 +170,13 @@ HTML implementation of the calculator.
                     <button class="calculator-number">5</button>
                     <button class="calculator-number">6</button>
                     <button class="calculator-operation">*</button>
-                <div>
+                </div>
                 <div class="butt-row">
                     <button class="calculator-number">1</button>
                     <button class="calculator-number">2</button>
                     <button class="calculator-number">3</button>
                     <button class="calculator-operation">-</button>
-                <div>
+                </div>
                 <div class="butt-row">
                     <button class="calculator-number">0</button>
                     <button class="calculator-number">.</button>
@@ -179,6 +185,7 @@ HTML implementation of the calculator.
             </div>
         </div>
     </section>
+</div>
 </body>
 
 <!-- JavaScript (JS) implementation of the calculator. -->
@@ -262,15 +269,14 @@ function calculate (first, second) { // function to calculate the result of the 
         default: 
             break;
         case "←":
-            let currentOutput = output.innerHTML;
-            if (currentOutput.length === 1) {
-                output.innerHTML = "0";
-            } else {
-                output.innerHTML = currentOutput.slice(0, -1);
+            if(buffer.length ===1){
+                buffer = '0';
+            }else{
+                buffer = buffer.substring(0, buffer.length - 1);
             }
             break;
         }
-            return result;
+    return result;
 }
 
 // Equals button listener
@@ -300,6 +306,26 @@ function clearCalc () { // clears calculator
     output.innerHTML = "0";
     nextReady = true;
 }
+
+// back action
+
+back.forEach(button => {
+  button.addEventListener("click", function() {
+    // Call the backspace function
+    backspace();
+  });
+});
+
+
+function backspace() {
+  let currentOutput = output.innerHTML;
+  if (currentOutput.length === 1) {
+    output.innerHTML = "0";
+  } else {
+    output.innerHTML = currentOutput.slice(0, -1);
+  }
+}
+
 </script>
 
 <!-- 
