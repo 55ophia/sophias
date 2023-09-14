@@ -33,8 +33,6 @@ HTML implementation of the calculator.
         background: rgba(255, 255, 255, 0.75);
         border: 1px dotted cornflowerblue;
         border-radius: 16px;
-        max-width: 500px;
-        width: 100%;
     }
   .calculator-output {
     /* calulator output 
@@ -64,10 +62,11 @@ HTML implementation of the calculator.
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #232323;
-    flex-basis: 18%;
+    width: 10%;
+    flex-basis: 25%;
     font-family: inherit;
     height: 65px;
-    font-size: 20px;
+    font-size: 25px;
     margin: 5px;
 }
 
@@ -81,6 +80,9 @@ HTML implementation of the calculator.
     color: #fff;
     background: cornflowerblue;
     font-size: 20px;
+    width: 10%;
+    flex-basis: 25%;
+    height: 65px;
  }
 
  .calculator-equals{
@@ -93,6 +95,9 @@ HTML implementation of the calculator.
     color: #fff;
     background: cornflowerblue;
     font-size: 20px;
+    width: 22%;
+    flex-basis: 25%;
+    height: 65px;
  }
 
 .container {
@@ -107,13 +112,18 @@ HTML implementation of the calculator.
  }
 
  .calculator-number:hover{
-     background-color: inherit;
+     background-color: lightblue;
      color: inherit;
  }
 
 .calculator-number:active{
-    background-color: lavender;
+     background-color: lavender;
 }
+
+ .calculator-clear:hover{
+     background-color: inherit;
+     color: inherit;
+ }
 
  .calculator-clear{
     backdrop-filter: blur(5.5px);
@@ -123,11 +133,11 @@ HTML implementation of the calculator.
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     color: #232323;
-    flex-basis: 20%;
+    flex-basis: 40%;
     font-family: inherit;
     height: 65px;
     font-size: 20px;
-    flex-basis: 47%;
+    width: 24.2%
  }
  
  .calculator-back{
@@ -142,7 +152,6 @@ HTML implementation of the calculator.
     font-family: inherit;
     height: 65px;
     font-size: 20px;
-    flex-basis: 47%;
  }
 </style>
 
