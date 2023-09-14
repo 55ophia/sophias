@@ -27,9 +27,13 @@ HTML implementation of the calculator.
     Background is credited to Vanta JS and is implemented at bottom of this page
 -->
 <style>
-    body{
-        align-items:center;
-        background: linear-gradient(320deg, cornflowerblue, royalblue);
+    .wrapper{
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(5.5px);
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px dotted cornflowerblue;
+        border-radius: 16px;
+        width: 50%;
     }
   .calculator-output {
     /* calulator output 
@@ -37,68 +41,144 @@ HTML implementation of the calculator.
       result to take up the entirety of the first row;
       span defines 4 columns and 1 row
     */
-    grid-column: span 4;
-    grid-row: span 1;
-  
-    border-radius: 10px;
-    padding: 0.25em;
-    font-size: 20px;
-    border: 5px solid cornflowerblue;
-  
-    display: flex;
-    align-items: center;
+
+
+    background: rgba(255. 255. 255. 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    font-size: 35px;
+    overflow: auto;
+    padding: 10px;
+    text-align: right;
   }
- .calculator-number {
+
+
+
+ .calculator-number{
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    height: 65px;
     font-size: 20px;
  }
  .calculator-operation{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #fff;
+    background: cornflowerblue;
     font-size: 20px;
  }
- .calculator-clear{
+
+ .calculator-equals{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #fff;
+    background: cornflowerblue;
     font-size: 20px;
+ }
+
+.calculator
+
+ .calculator-operation:hover{
+     background-color: inherit;
+     color: inherit;
+ }
+
+ .calculator-number:hover{
+     background-color: inherit;
+     color: inherit;
+ }
+
+.calculator-number:active{
+    background-color: lavender;
+}
+
+ .calculator-clear{
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    height: 65px;
+    font-size: 20px;
+    flex-basis: 47%;
+ }
+ 
+ .calculator-back{
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    height: 65px;
+    font-size: 20px;
+    flex-basis: 47%;
  }
 </style>
 
 <!-- Add a container for the animation -->
 <body>
 <div id="animation">
-<section class="calc-butt">
-  <div class="calc-row">
-      <!--result-->
-         <div class="calculator-output" id="output">0</div>
-            <div class="butt-row">
-                <button class="calculator-clear">C</button>
-                <button class="calculator-back">
-                    &larr;
-                </button>
-                 <button class="calculator-operation">+</button>
-            <div>
-            <div class="butt-row">
-                 <button class="calculator-number">7</button>
-                 <button class="calculator-number">8</button>
-                 <button class="calculator-number">9</button>
-                 <button class="calculator-operation">/</button>
+    <section class="calc-butt">
+        <div class="wrapper">
+        <!--result-->
+            <div class="calculator-output" id="output">0</div>
+                <div class="butt-row">
+                    <button class="calculator-clear">C</button>
+                    <button class="calculator-operation calculator-back">
+                        &larr;
+                    </button>
+                    <button class="calculator-operation">+</button>
+                <div>
+                <div class="butt-row">
+                    <button class="calculator-number">7</button>
+                    <button class="calculator-number">8</button>
+                    <button class="calculator-number">9</button>
+                    <button class="calculator-operation">/</button>
+                </div>
+                <div class="butt-row">
+                    <button class="calculator-number">4</button>
+                    <button class="calculator-number">5</button>
+                    <button class="calculator-number">6</button>
+                    <button class="calculator-operation">*</button>
+                <div>
+                <div class="butt-row">
+                    <button class="calculator-number">1</button>
+                    <button class="calculator-number">2</button>
+                    <button class="calculator-number">3</button>
+                    <button class="calculator-operation">-</button>
+                <div>
+                <div class="butt-row">
+                    <button class="calculator-number">0</button>
+                    <button class="calculator-number">.</button>
+                    <button class="calculator-equals">=</button>
+                </div>
             </div>
-            <div class="butt-row">
-                 <button class="calculator-number">4</button>
-                 <button class="calculator-number">5</button>
-                 <button class="calculator-number">6</button>
-                 <button class="calculator-operation">*</button>
-            <div>
-            <div class="butt-row">
-                 <button class="calculator-number">1</button>
-                 <button class="calculator-number">2</button>
-                 <button class="calculator-number">3</button>
-                 <button class="calculator-operation">-</button>
-            <div>
-            <div class="butt-row">
-                 <button class="calculator-number">0</button>
-                 <button class="calculator-number">.</button>
-                 <button class="calculator-equals">=</button>
-            </div>
-  </div>
-</div>
-</section>
+        </div>
+    </section>
 </body>
 
 <!-- JavaScript (JS) implementation of the calculator. -->
@@ -113,6 +193,7 @@ const numbers = document.querySelectorAll(".calculator-number");
 const operations = document.querySelectorAll(".calculator-operation");
 const clear = document.querySelectorAll(".calculator-clear");
 const equals = document.querySelectorAll(".calculator-equals");
+const back = document.querySelectorAll(".calculator-back");
 
 // Number buttons listener
 numbers.forEach(button => {
@@ -180,8 +261,16 @@ function calculate (first, second) { // function to calculate the result of the 
             break;
         default: 
             break;
-    }
-    return result;
+        case "←":
+            let currentOutput = output.innerHTML;
+            if (currentOutput.length === 1) {
+                output.innerHTML = "0";
+            } else {
+                output.innerHTML = currentOutput.slice(0, -1);
+            }
+            break;
+        }
+            return result;
 }
 
 // Equals button listener
