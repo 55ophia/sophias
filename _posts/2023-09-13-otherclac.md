@@ -27,6 +27,10 @@ HTML implementation of the calculator.
     Background is credited to Vanta JS and is implemented at bottom of this page
 -->
 <style>
+    body{
+        align-items:center;
+        background: linear-gradient(320deg, cornflowerblue, royalblue);
+    }
   .calculator-output {
     /* calulator output 
       top bar shows the results of the calculator;
@@ -47,35 +51,55 @@ HTML implementation of the calculator.
  .calculator-number {
     font-size: 20px;
  }
+ .calculator-operation{
+    font-size: 20px;
+ }
+ .calculator-clear{
+    font-size: 20px;
+ }
 </style>
 
 <!-- Add a container for the animation -->
+<body>
 <div id="animation">
-  <div class="calculator-container">
+<section class="calc-butt">
+  <div class="calc-row">
       <!--result-->
-      <div class="calculator-output" id="output">0</div>
-      <!--row 1-->
-      <div class="calculator-number">1</div>
-      <div class="calculator-number">2</div>
-      <div class="calculator-number">3</div>
-      <div class="calculator-operation">+</div>
-      <!--row 2-->
-      <div class="calculator-number">4</div>
-      <div class="calculator-number">5</div>
-      <div class="calculator-number">6</div>
-      <div class="calculator-operation">-</div>
-      <!--row 3-->
-      <div class="calculator-number">7</div>
-      <div class="calculator-number">8</div>
-      <div class="calculator-number">9</div>
-      <div class="calculator-operation">*</div>
-      <!--row 4-->
-      <div class="calculator-clear">A/C</div>
-      <div class="calculator-number">0</div>
-      <div class="calculator-number">.</div>
-      <div class="calculator-equals">=</div>
+         <div class="calculator-output" id="output">0</div>
+            <div class="butt-row">
+                <button class="calculator-clear">C</button>
+                <button class="calculator-back">
+                    &larr;
+                </button>
+                 <button class="calculator-operation">+</button>
+            <div>
+            <div class="butt-row">
+                 <button class="calculator-number">7</button>
+                 <button class="calculator-number">8</button>
+                 <button class="calculator-number">9</button>
+                 <button class="calculator-operation">/</button>
+            </div>
+            <div class="butt-row">
+                 <button class="calculator-number">4</button>
+                 <button class="calculator-number">5</button>
+                 <button class="calculator-number">6</button>
+                 <button class="calculator-operation">*</button>
+            <div>
+            <div class="butt-row">
+                 <button class="calculator-number">1</button>
+                 <button class="calculator-number">2</button>
+                 <button class="calculator-number">3</button>
+                 <button class="calculator-operation">-</button>
+            <div>
+            <div class="butt-row">
+                 <button class="calculator-number">0</button>
+                 <button class="calculator-number">.</button>
+                 <button class="calculator-equals">=</button>
+            </div>
   </div>
 </div>
+</section>
+</body>
 
 <!-- JavaScript (JS) implementation of the calculator. -->
 <script>
