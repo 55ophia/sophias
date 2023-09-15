@@ -29,7 +29,6 @@ HTML implementation of the calculator.
 <style>
     .wrapper{
         backdrop-filter: blur(5.5px);
-        -webkit-backdrop-filter: blur(5.5px);
         background: rgba(255, 255, 255, 0.75);
         border: 1px dotted cornflowerblue;
         border-radius: 16px;
@@ -40,16 +39,18 @@ HTML implementation of the calculator.
       result to take up the entirety of the first row;
       span defines 4 columns and 1 row
     */
-
+    grid-column: span 4;
+    grid-row: span 1;
 
     background: rgba(255. 255. 255. 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.01);
+    border: 5px solid rgba(255, 255, 255, 0.01);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
     font-size: 35px;
-    overflow: auto;
-    padding: 10px;
-    text-align: right;
+    padding: 0.23em;
+
+    display: flex;
+    align-items: center;
   }
 
 
@@ -102,7 +103,6 @@ HTML implementation of the calculator.
 
 .container {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -364,7 +364,7 @@ vantaInstance({
   mouseControls: true,
   touchControls: true,
   gyroControls: false
-});
+}); 
 </script>
 
 
